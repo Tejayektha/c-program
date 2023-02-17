@@ -1,0 +1,14 @@
+#include<stdio.h> 
+#include<conio.h> 
+void main() 
+{ 
+int i; 
+printf("The numbers divisible by nth are: "); 
+for(i=1; i<=100; i++) 
+{ 
+if(%n==0) 
+{ 
+printf("%d\n", i); 
+} 
+} 
+} 
