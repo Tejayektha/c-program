@@ -30,7 +30,5 @@ int main()
 		}	
 	}
 	printf("\n The Largest Number in this Array =  %d", first);
-	printf("\n The Second Largest Number in this Array =  %d", second);
-	
 	return 0;
 }
