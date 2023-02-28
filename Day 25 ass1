@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+    int i,j,c,count=0,range;
+    scanf("%d",&range);
+    for(i=1;i<=range;i++){
+        c=0;
+       for(j=1;j<=range;j++) {
+           if(i%j==0){
+             c++;   
+           }
+       }
+       if(c==2)
+       count++;
+    }
+    printf("%d",count);
+    return 0;
+}
