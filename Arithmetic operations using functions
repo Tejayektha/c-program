@@ -1,0 +1,35 @@
+#include <stdio.h>
+ int sum(int , int);
+ int diff(int , int);
+ int mul(int , int);
+ int div(int , int);
+ int main(){
+     int x,y,add,sub,multiply,division;
+     scanf("%d %d",&x,&y);
+     add=sum(x,y);
+     sub=diff(x,y);
+     multiply=mul(x,y);
+     division=div(x,y);
+     printf(" addition =%d\nsubtraction=%d\nmultiplication=%d\ndivision=%d",add,sub,multiply,division);
+     return 0;
+ }
+ int sum(int a, int b){
+    int sum;
+    sum=a+b;
+    return sum;
+ }
+ int diff(int a , int b){
+     int diff;
+     diff=a-b;
+     return diff;
+ }
+ int mul(int a, int b){
+     int mult;
+     mult=a*b;
+     return mult;
+ }
+ int div(int a, int b){
+     int divi;
+     divi=a/b;
+     return divi;
+ }
