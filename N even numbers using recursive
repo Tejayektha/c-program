@@ -1,0 +1,20 @@
+#include<stdio.h>
+void even(int n);
+int main() 
+{
+    even(5);
+    return 0;
+}
+void even_recursive(int next, int n)
+{
+    if (n <= 0)
+    {
+        return;
+    }
+    printf("next %d\n", next);
+    even_recursive(next + 2, n - 1);        
+}
+void even(int n)
+{
+    even_recursive(2, n);
+}
