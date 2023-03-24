@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+struct book
+{
+intbookid;
+char title[30];
+char author[20];
+float price;
+};
+voidprint_book(struct book b1);
+void main()
+{
+struct book b1;
+printf("\n enter book details: ");
+scanf("%d%s%s%f",&b1.bookid,b1.title,b1.author,&b1.price);
+
+print_book(b1);
+}
+voidprint_book(struct book b1)
+{
+printf("\n book details:%d\t %s\t %s\t %f",b1.bookid,b1.title,b1.author,b1.price);
+}
