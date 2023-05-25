@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    int i,n,j;
+    char a[50],str[50];
+    printf("enter any string:");
+    scanf("%s",a);
+    printf("the string you entered is :");
+    printf("%s",a);
+    n=strlen(a);
+    i=n-1;
+    for(j=0;j<n;j++){
+        str[j]=a[i];
+        i--;
+    }
+    printf("\nreverse string: ");
+    for(j=0;j<n;j++){
+        printf("%c",str[j]);
+    }
+    return 0;
+}
