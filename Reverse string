@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main(){
+    char ch,str[50];
+    int i,lwrchars=0,capchars=0,digits=0,splchars=0;
+    printf("enter any string:");
+    scanf("%s",str);
+    for(i=0;i<strlen(str);i++){
+        ch=str[i];
+        if(ch>='a'&&ch<='z'){
+            lwrchars++;
+        }
+        else if(ch>='A'&&ch<='Z'){
+            capchars++;
+        }
+        else if(ch>='0'&&ch<='9'){
+            digits++;
+        }
+        else{
+            splchars++;
+        }
+    }
+    printf("number of lower characters=%d\nnumber of upper characters=%d\nnumber of integer characters=%d\nnumber of special characters=%d\n",lwrchars,capchars,digits,splchars);
+
+    return 0;
+    }
